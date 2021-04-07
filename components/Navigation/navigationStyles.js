@@ -6,14 +6,20 @@ const useStyles = makeStyles(() => ({
     position: "absolute",
     padding: "60px 0",
     display: "flex",
+
+    // width: "1200px",
+    // maxWidth: "90vw",
+
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
+    // justifyContent: "space-between",
   },
   menuItems: {
     display: "flex",
     flexWrap: "wrap",
     alignItems: "center",
+    paddingLeft: "-200px",
   },
   navMenu: {
     marginLeft: "60px",

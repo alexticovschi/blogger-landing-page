@@ -5,11 +5,13 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Navigation from "../components/Navigation/Navigation";
-
+import DesignedForTheFuture from "../components/HomeComponents/DesignedForTheFuture/DesignedForTheFuture";
 import useStyles from "../src/homeStyles";
 
 export default function Home() {
   const classes = useStyles();
+  const wdth = "100%";
+  const hth = "100%";
   return (
     <ThemeProvider theme={theme}>
       <Head>
@@ -52,7 +54,9 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main></main>
+      <main className={classes.root}>
+        <DesignedForTheFuture />
+      </main>
     </ThemeProvider>
   );
 }
