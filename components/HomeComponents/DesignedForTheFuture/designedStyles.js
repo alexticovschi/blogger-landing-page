@@ -3,6 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(() => ({
   designedForTheFuture: {
     padding: "150px 0",
+    width: "1250px",
+    maxWidth: "90vw",
+    margin: "0 auto",
   },
   designedContainer: {
     display: "flex",
@@ -30,6 +33,7 @@ const useStyles = makeStyles(() => ({
     marginRight: "53%",
     paddingTop: "40px",
     height: "780px",
+    color: "hsl(207, 13%, 34%)",
   },
   designedImgContainer: {
     position: "absolute",

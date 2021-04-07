@@ -6,12 +6,13 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Navigation from "../components/Navigation/Navigation";
 import DesignedForTheFuture from "../components/HomeComponents/DesignedForTheFuture/DesignedForTheFuture";
+import StateOfTheArt from "../components/HomeComponents/StateOfTheArt/StateOfTheArt";
+
 import useStyles from "../src/homeStyles";
 
 export default function Home() {
   const classes = useStyles();
-  const wdth = "100%";
-  const hth = "100%";
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
@@ -54,8 +55,9 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className={classes.root}>
+      <main>
         <DesignedForTheFuture />
+        <StateOfTheArt />
       </main>
     </ThemeProvider>
   );
