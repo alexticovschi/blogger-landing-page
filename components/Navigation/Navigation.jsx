@@ -8,11 +8,15 @@ const Navigation = () => {
 
   return (
     <div className={classes.menuContainer}>
-      <div className={classes.logo}>
+      <div className={classes.logoContainer}>
         <Link href="#">
-          <img src="images/logo.svg" alt="logo" />
+          <img
+            src="images/logo.svg"
+            alt="logo"
+            className={classes.logoMobile}
+          />
         </Link>
-        <div id="button-menu" className={classes.hamburgerMenuButton}>
+        <div className={classes.hamburgerMenuButton}>
           <img src="images/icon-hamburger.svg" alt="" />
         </div>
       </div>
@@ -20,6 +24,11 @@ const Navigation = () => {
       <div className={classes.menuItems}>
         <nav className={classes.navMenu}>
           <ul className={classes.ulOuter}>
+            <li className={classes.logo}>
+              <Link href="#">
+                <img src="images/logo.svg" alt="logo" />
+              </Link>
+            </li>
             <li className={classes.menuList}>
               <Link href="#">
                 <a>

@@ -1,25 +1,41 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
+  logoContainer: {
+    "@media (max-width: 1005px)": {
+      display: "flex",
+      justifyContent: " space-between",
+      alignItems: "center",
+    },
+  },
+  logoMobile: {
+    display: "none",
+
+    "@media (max-width: 1005px)": {
+      display: "block",
+    },
+  },
+
   menuContainer: {
     top: "0",
     position: "absolute",
     padding: "60px 0",
-    display: "flex",
 
-    // width: "1200px",
-    // maxWidth: "90vw",
-
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    // justifyContent: "space-between",
+    width: "1200px",
+    maxWidth: "90vw",
   },
   menuItems: {
     display: "flex",
     flexWrap: "wrap",
-    alignItems: "center",
-    paddingLeft: "-200px",
+    justifyContent: "space-between",
+  },
+  logo: {
+    paddingRight: "60px",
+    marginLeft: "-60px",
+
+    "@media (max-width: 1005px)": {
+      display: "none",
+    },
   },
   navMenu: {
     marginLeft: "60px",
@@ -69,7 +85,7 @@ const useStyles = makeStyles(() => ({
   menuList: {
     "& > a": {
       display: "block",
-      marginRight: "40px",
+      marginRight: "38px",
       padding: "15px 0 15px 0",
 
       "&:hover": {
@@ -87,6 +103,10 @@ const useStyles = makeStyles(() => ({
         marginLeft: "8px",
       },
     },
+
+    "@media (max-width: 1005px)": {
+      display: "none",
+    },
   },
   loginAndSignup: {
     marginLeft: "160px",
@@ -94,11 +114,15 @@ const useStyles = makeStyles(() => ({
     "& a": {
       fontFamily: ["Ubuntu", "sans-serif"],
       fontWeight: "500",
-      width: "60px",
+      fontSize: 16,
       display: "inline-block",
       textDecoration: "none",
-      padding: "14px 40px",
+      padding: "12px 32px",
       borderRadius: "25px",
+    },
+
+    "@media (max-width: 1005px)": {
+      display: "none",
     },
   },
 
@@ -114,8 +138,9 @@ const useStyles = makeStyles(() => ({
   },
 
   signup: {
-    color: "hsl(356, 100%, 66%)",
+    color: "hsl(356, 100%, 62%)",
     backgroundColor: "#fff",
+    fontFamily: "Overpass",
 
     "&:hover": {
       backgroundColor: "hsl(355, 100%, 74%)",
@@ -126,6 +151,11 @@ const useStyles = makeStyles(() => ({
 
   hamburgerMenuButton: {
     display: "none",
+
+    "@media (max-width: 1005px)": {
+      display: "block",
+      cursor: "pointer",
+    },
   },
 }));
 
