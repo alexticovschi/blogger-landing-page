@@ -2,6 +2,7 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/styles";
 import theme from "../src/theme";
 import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/Footer/Footer";
 import HeaderIntro from "../components/HomeComponents/HeaderIntro/HeaderIntro";
 import DesignedForTheFuture from "../components/HomeComponents/DesignedForTheFuture/DesignedForTheFuture";
 import StateOfTheArt from "../components/HomeComponents/StateOfTheArt/StateOfTheArt";
@@ -27,6 +28,7 @@ export default function Home() {
         <StateOfTheArt />
         <BlogrDescription />
       </main>
+      <Footer />
     </ThemeProvider>
   );
 }
