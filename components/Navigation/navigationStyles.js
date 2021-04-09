@@ -131,9 +131,9 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
 
     "&:hover": {
-      backgroundColor: "#fff",
-      color: "hsl(356, 100%, 66%)",
+      color: "#fff",
       transition: "linear .2s",
+      textDecoration: "underline",
     },
   },
 

@@ -27,7 +27,10 @@ const useStyles = makeStyles(() => ({
   footerList: {
     listStyleType: "none",
     paddingLeft: "10px",
-    textAlign: "center",
+
+    "@media (max-width: 767px)": {
+      textAlign: "center",
+    },
 
     "& li": {
       marginBottom: "16px",
