@@ -15,18 +15,13 @@ const useStyles = makeStyles(() => ({
     margin: "0 auto",
   },
   stateOfTheArtImgContainer: {
-    margin: "-70px 0 -110px -40px",
+    margin: "-70px 0 -110px -70px",
 
     "@media (max-width: 980px)": {
       margin: "-170px 0 0 0",
     },
   },
-  stateOfTheArtImg: {
-    "@media (max-width: 980px)": {
-      margin: "-270px 0 -110px -40px",
-      width: "100%",
-    },
-  },
+  stateOfTheArtImg: {},
   stateOfTheArtTextContainer: {
     display: "flex",
     flexDirection: "column",
@@ -39,6 +34,7 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Overpass",
     fontWeight: "600",
     color: "#ffffff",
+    paddingLeft: "40px",
 
     "@media (max-width: 780px)": {
       textAlign: "center",

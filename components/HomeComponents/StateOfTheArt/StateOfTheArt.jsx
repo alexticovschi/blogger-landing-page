@@ -10,9 +10,14 @@ const StateOfTheArt = () => {
   return (
     <section className={classes.stateOfTheArt}>
       <Grid container className={classes.stateOfTheArtContainer}>
-        <Grid item xs={12} md={6} className={classes.stateOfTheArtImgContainer}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          align="center"
+          className={classes.stateOfTheArtImgContainer}
+        >
           <picture>
-            <source srcset="images/illustration-phones.svg" />
             <Image
               className={classes.stateOfTheArtImg}
               src="/images/illustration-phones.svg"
