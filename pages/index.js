@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation/Navigation";
 import HeaderIntro from "../components/HomeComponents/HeaderIntro/HeaderIntro";
 import DesignedForTheFuture from "../components/HomeComponents/DesignedForTheFuture/DesignedForTheFuture";
 import StateOfTheArt from "../components/HomeComponents/StateOfTheArt/StateOfTheArt";
+import BlogrDescription from "../components/HomeComponents/BlogrDescription/BlogrDescription";
 
 import useStyles from "../src/homeStyles";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <main>
         <DesignedForTheFuture />
         <StateOfTheArt />
+        <BlogrDescription />
       </main>
     </ThemeProvider>
   );

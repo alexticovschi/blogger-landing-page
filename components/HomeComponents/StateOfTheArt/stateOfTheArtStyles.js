@@ -21,7 +21,6 @@ const useStyles = makeStyles(() => ({
       margin: "-170px 0 0 0",
     },
   },
-  stateOfTheArtImg: {},
   stateOfTheArtTextContainer: {
     display: "flex",
     flexDirection: "column",
@@ -35,6 +34,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: "600",
     color: "#ffffff",
     paddingLeft: "40px",
+    paddingLeft: "110px",
 
     "@media (max-width: 780px)": {
       textAlign: "center",
