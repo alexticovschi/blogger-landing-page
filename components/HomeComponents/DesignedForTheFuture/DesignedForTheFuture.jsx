@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import useMediaQuery from "../../useMediaQuery";
 import useStyles from "./designedStyles";
 import Typography from "@material-ui/core/Typography";
 
 const DesignedForTheFuture = () => {
   const classes = useStyles();
+  const isBreakpoint = useMediaQuery(768);
 
   return (
     <section className={classes.designedForTheFuture}>
@@ -19,14 +21,25 @@ const DesignedForTheFuture = () => {
       </Typography>
 
       <div className={classes.designedContainer}>
-        <picture className={classes.designedImgContainer}>
-          <Image
-            src="/images/illustration-editor-desktop.svg"
-            alt="background circles"
-            width={1200}
-            height={1100}
-          />
-        </picture>
+        <div className={classes.designedImgContainer}>
+          {isBreakpoint ? (
+            <Image
+              className={classes.designedImg}
+              src="/images/illustration-editor-mobile.svg"
+              alt="background circles"
+              width={1200}
+              height={900}
+            />
+          ) : (
+            <Image
+              className={classes.designedImg}
+              src="/images/illustration-editor-desktop.svg"
+              alt="background circles"
+              width={1200}
+              height={1100}
+            />
+          )}
+        </div>
         <div className={classes.designedText}>
           <Typography
             variant="h5"

@@ -6,6 +6,10 @@ const useStyles = makeStyles(() => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "0 85%",
     borderRadius: "0 80px 0 80px",
+
+    "@media (max-device-width: 768px) and (orientation: portrait)": {
+      marginTop: "140px",
+    },
   },
 
   stateOfTheArtContainer: {
@@ -36,9 +40,9 @@ const useStyles = makeStyles(() => ({
     paddingLeft: "40px",
     paddingLeft: "110px",
 
-    "@media (max-width: 780px)": {
+    "@media (max-width:768px)": {
       textAlign: "center",
-      padding: "10px 0 80px 0",
+      padding: "10px 30px 100px 30px",
     },
   },
   stateOfTheArtSubtitle: {

@@ -38,9 +38,20 @@ const useStyles = makeStyles(() => ({
     },
   },
   intro: {
-    fontWeight: "300",
+    fontWeight: "600",
+    marginBottom: "20px",
+
+    "@media (max-width: 768px)": {
+      padding: "0 0px",
+      fontSize: 38,
+    },
   },
-  subtitle: {},
+  subtitle: {
+    "@media (max-width: 768px)": {
+      padding: "0 38px",
+      fontSize: 18,
+    },
+  },
   heading: {
     color: "hsl(208, 49%, 24%)",
   },

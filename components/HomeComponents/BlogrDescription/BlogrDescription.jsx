@@ -1,22 +1,33 @@
 import React from "react";
 import Image from "next/image";
+import useMediaQuery from "../../useMediaQuery";
 import useStyles from "./blogrDescriptionStyles";
 import Typography from "@material-ui/core/Typography";
 
 const BlogrDescription = () => {
   const classes = useStyles();
+  const isBreakpoint = useMediaQuery(768);
 
   return (
     <section className={classes.blogrDescription}>
       <div className={classes.blogrDescriptionContainer}>
-        <picture className={classes.blogrDescriptionImgContainer}>
-          <Image
-            src="/images/illustration-laptop-desktop.svg"
-            alt="background circles"
-            width={1200}
-            height={900}
-          />
-        </picture>
+        <div className={classes.blogrDescriptionImgContainer}>
+          {isBreakpoint ? (
+            <Image
+              src="/images/illustration-laptop-mobile.svg"
+              alt="background circles"
+              width={1200}
+              height={800}
+            />
+          ) : (
+            <Image
+              src="/images/illustration-laptop-desktop.svg"
+              alt="background circles"
+              width={1200}
+              height={900}
+            />
+          )}
+        </div>
         <div className={classes.blogrDescriptionText}>
           <Typography
             variant="h5"

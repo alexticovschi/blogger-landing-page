@@ -12,14 +12,22 @@ const useStyles = makeStyles(() => ({
     width: "1250px",
     maxWidth: "90vw",
     margin: "0 auto",
+
+    "@media (max-width: 767px)": {
+      gridTemplateColumns: "1fr",
+      justifyItems: "center",
+      padding: "70px 0",
+    },
   },
   footerLogo: {
     display: "flex",
     alignSelf: "center",
+    paddingBottom: "20px",
   },
   footerList: {
     listStyleType: "none",
     paddingLeft: "10px",
+    textAlign: "center",
 
     "& li": {
       marginBottom: "16px",

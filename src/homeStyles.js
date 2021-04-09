@@ -12,6 +12,11 @@ const useStyles = makeStyles(() => ({
     backgroundPosition: "25%",
     borderBottomLeftRadius: "80px",
     color: "#fff",
+
+    "@media (max-width: 768px)": {
+      padding: "0 20px",
+      height: "41rem",
+    },
   },
 }));
 
