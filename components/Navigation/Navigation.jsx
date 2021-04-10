@@ -2,9 +2,19 @@ import React from "react";
 import useStyles from "./navigationStyles";
 import Grid from "@material-ui/core/Grid";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import useMediaQuery from "../useMediaQuery";
 
 const Navigation = () => {
+  const [isOpen, setOpen] = useState(false);
   const classes = useStyles();
+  const isBreakpoint = useMediaQuery(1012);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [isBreakpoint]);
+
+  const handleToggle = () => setOpen(!isOpen);
 
   return (
     <div className={classes.menuContainer}>
@@ -16,12 +26,16 @@ const Navigation = () => {
             className={classes.logoMobile}
           />
         </Link>
-        <div className={classes.hamburgerMenuButton}>
-          <img src="images/icon-hamburger.svg" alt="" />
+        <div onClick={handleToggle} className={classes.hamburgerMenuButton}>
+          {isOpen ? (
+            <img src="images/icon-close.svg" alt="" />
+          ) : (
+            <img src="images/icon-hamburger.svg" alt="" />
+          )}
         </div>
       </div>
 
-      <div className={classes.menuItems}>
+      <div className={isOpen ? classes.menuItemsShow : classes.menuItems}>
         <nav className={classes.navMenu}>
           <ul className={classes.ulOuter}>
             <li className={classes.logo}>
@@ -152,13 +166,17 @@ const Navigation = () => {
           </ul>
         </nav>
         <div className={classes.loginAndSignup}>
-          <Grid container spacing={1} justify="center">
-            <Grid item>
+          <Grid
+            container
+            justify="center"
+            className={classes.loginAndSignupGridContainer}
+          >
+            <Grid item xs={12}>
               <Link href="#">
                 <a className={classes.login}>Login</a>
               </Link>
             </Grid>
-            <Grid item>
+            <Grid item xs={12}>
               <Link href="#">
                 <a className={classes.signup}>Sign Up</a>
               </Link>

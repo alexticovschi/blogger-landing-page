@@ -8,7 +8,7 @@ const HeaderIntro = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.headerIntro}>
       <div className={classes.introText}>
         <Typography
           variant="h3"
