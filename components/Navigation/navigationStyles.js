@@ -65,6 +65,7 @@ const useStyles = makeStyles(() => ({
     "@media (max-width: 1000px)": {
       margin: 0,
       paddingBottom: "25px",
+      borderBottom: "1px solid hsl(240, 2%, 79%, 0.3)",
     },
 
     "& ul": {
@@ -181,17 +182,15 @@ const useStyles = makeStyles(() => ({
     },
   },
   loginAndSignup: {
-    marginLeft: "160px",
+    marginLeft: "auto",
     textAlign: "center",
 
     "@media (max-width: 1032px)": {
-      marginLeft: "100px",
+      marginLeft: "90px",
     },
 
     "@media (max-width: 1000px)": {
-      display: "flex",
-      flexDirection: "column",
-      margin: 0,
+      marginLeft: "0",
     },
 
     "& a": {
@@ -204,10 +203,20 @@ const useStyles = makeStyles(() => ({
       borderRadius: "25px",
     },
   },
+  loginAndSignupGridContainer: {
+    listStyleType: "none",
+    marginTop: "20px",
+
+    "@media (min-width: 1000px)": {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+    },
+  },
 
   login: {
     color: "rgba(255, 255, 255, 0.85)",
     textAlign: "center",
+    fontWeight: "600 !important",
 
     "@media (max-width: 1000px)": {
       color: "hsl(237, 23%, 32%)",
@@ -241,12 +250,6 @@ const useStyles = makeStyles(() => ({
       backgroundColor: "hsl(355, 100%, 74%)",
       color: "#fff",
       transition: "linear .2s",
-    },
-  },
-  loginAndSignupGridContainer: {
-    "@media (min-width: 1000px)": {
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr",
     },
   },
 

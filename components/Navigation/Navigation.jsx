@@ -166,7 +166,7 @@ const Navigation = () => {
           </ul>
         </nav>
         <div className={classes.loginAndSignup}>
-          <Grid
+          {/* <Grid
             container
             justify="center"
             className={classes.loginAndSignupGridContainer}
@@ -181,7 +181,19 @@ const Navigation = () => {
                 <a className={classes.signup}>Sign Up</a>
               </Link>
             </Grid>
-          </Grid>
+          </Grid> */}
+          <ul className={classes.loginAndSignupGridContainer}>
+            <li>
+              <Link href="#">
+                <a className={classes.login}>Login</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <a className={classes.signup}>Sign Up</a>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
