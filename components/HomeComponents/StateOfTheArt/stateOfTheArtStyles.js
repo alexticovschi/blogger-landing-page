@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
     backgroundPosition: "0 85%",
     borderRadius: "0 80px 0 80px",
 
-    "@media (max-device-width: 768px) and (orientation: portrait)": {
+    "@media (max-width: 768px) and (orientation: portrait)": {
       marginTop: "140px",
     },
   },

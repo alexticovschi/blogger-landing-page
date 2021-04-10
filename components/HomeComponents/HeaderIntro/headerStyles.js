@@ -48,11 +48,11 @@ const useStyles = makeStyles(() => ({
     },
   },
   intro: {
-    fontWeight: "600",
+    fontWeight: "300",
     marginBottom: "20px",
 
     "@media (max-width: 768px)": {
-      padding: "0 0px",
+      padding: "0",
       fontSize: 38,
     },
   },
