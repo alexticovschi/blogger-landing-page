@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => ({
   footerContainer: {
     display: "grid",
     gridTemplateColumns: "repeat(4, 1fr)",
-    padding: "110px 0",
+    padding: "60px 0",
     width: "1250px",
     maxWidth: "90vw",
     margin: "0 auto",
