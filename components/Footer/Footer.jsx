@@ -24,13 +24,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className={classes.footerList}>
-          <Typography
-            variant="subtitle1"
-            className={classes.footerTitle}
-            gutterBottom
-          >
-            Product
-          </Typography>
+          <h6 className={classes.footerTitle}>Product</h6>
           <li>
             <Link href="#">Overview</Link>
           </li>
@@ -50,13 +44,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className={classes.footerList}>
-          <Typography
-            variant="subtitle1"
-            className={classes.footerTitle}
-            gutterBottom
-          >
-            Company
-          </Typography>
+          <h6 className={classes.footerTitle}>Company</h6>
           <li>
             <Link href="#">About</Link>
           </li>
@@ -71,13 +59,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className={classes.footerList}>
-          <Typography
-            variant="subtitle1"
-            className={classes.footerTitle}
-            gutterBottom
-          >
-            Connect
-          </Typography>
+          <h6 className={classes.footerTitle}>Connect</h6>
           <li>
             <Link href="#">Contact</Link>
           </li>

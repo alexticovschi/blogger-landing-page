@@ -182,15 +182,12 @@ const useStyles = makeStyles(() => ({
     },
   },
   loginAndSignup: {
-    marginLeft: "auto",
     textAlign: "center",
-
-    "@media (max-width: 1032px)": {
-      marginLeft: "90px",
-    },
+    marginTop: "-15px",
 
     "@media (max-width: 1000px)": {
-      marginLeft: "0",
+      marginLeft: "-40px",
+      marginTop: "15px",
     },
 
     "& a": {
@@ -206,6 +203,10 @@ const useStyles = makeStyles(() => ({
   loginAndSignupGridContainer: {
     listStyleType: "none",
     marginTop: "20px",
+
+    "@media (max-width: 1000px)": {
+      marginLeft: "0",
+    },
 
     "@media (min-width: 1000px)": {
       display: "grid",

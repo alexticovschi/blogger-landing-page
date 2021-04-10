@@ -2,7 +2,7 @@ import React from "react";
 import useStyles from "./headerStyles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+import Link from "next/link";
 
 const HeaderIntro = () => {
   const classes = useStyles();
@@ -28,18 +28,20 @@ const HeaderIntro = () => {
           Grow your audience and build your online brand
         </Typography>
       </div>
-      <div>
-        <Grid container spacing={2} justify="center">
-          <Grid item>
-            <Button className={classes.introBtnLeft} container="contained">
+      <Grid container spacing={2} justify="center">
+        <Grid item>
+          <Link href="#">
+            <a className={classes.introBtnLeft} container="contained">
               Start for Free
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button className={classes.introBtnRight}>Learn More</Button>
-          </Grid>
+            </a>
+          </Link>
         </Grid>
-      </div>
+        <Grid item>
+          <Link href="#">
+            <a className={classes.introBtnRight}>Learn More</a>
+          </Link>
+        </Grid>
+      </Grid>
     </div>
   );
 };

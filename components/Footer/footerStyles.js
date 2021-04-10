@@ -23,6 +23,7 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     alignSelf: "center",
     paddingBottom: "20px",
+    marginTop: "-10px",
   },
   footerList: {
     listStyleType: "none",
@@ -47,7 +48,9 @@ const useStyles = makeStyles(() => ({
     },
   },
   footerTitle: {
+    margin: 0,
     marginBottom: "30px",
+    fontSize: 18,
     color: "#fff",
     fontFamily: ["Ubuntu", "sans-serif"],
     fontWeight: "600",
