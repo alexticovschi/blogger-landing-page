@@ -114,6 +114,7 @@ const useStyles = makeStyles(() => ({
       padding: "20px 30px 20px 15px",
       borderRadius: "5px",
       position: "absolute",
+      // zIndex: "10",
 
       "@media (max-width: 1000px)": {
         position: "relative",

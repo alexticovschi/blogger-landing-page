@@ -49,7 +49,7 @@ const useStyles = makeStyles(() => ({
   },
   footerTitle: {
     margin: 0,
-    marginBottom: "30px",
+    paddingBottom: "25px",
     fontSize: 18,
     color: "#fff",
     fontFamily: ["Ubuntu", "sans-serif"],

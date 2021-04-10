@@ -24,7 +24,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className={classes.footerList}>
-          <h6 className={classes.footerTitle}>Product</h6>
+          <li className={classes.footerTitle}>Product</li>
           <li>
             <Link href="#">Overview</Link>
           </li>
@@ -44,7 +44,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className={classes.footerList}>
-          <h6 className={classes.footerTitle}>Company</h6>
+          <li className={classes.footerTitle}>Company</li>
           <li>
             <Link href="#">About</Link>
           </li>
@@ -59,7 +59,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className={classes.footerList}>
-          <h6 className={classes.footerTitle}>Connect</h6>
+          <li className={classes.footerTitle}>Connect</li>
           <li>
             <Link href="#">Contact</Link>
           </li>

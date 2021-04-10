@@ -31,9 +31,7 @@ const HeaderIntro = () => {
       <Grid container spacing={2} justify="center">
         <Grid item>
           <Link href="#">
-            <a className={classes.introBtnLeft} container="contained">
-              Start for Free
-            </a>
+            <a className={classes.introBtnLeft}>Start for Free</a>
           </Link>
         </Grid>
         <Grid item>

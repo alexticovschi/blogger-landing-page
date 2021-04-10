@@ -17,15 +17,13 @@ const StateOfTheArt = () => {
           align="center"
           className={classes.stateOfTheArtImgContainer}
         >
-          <picture>
-            <Image
-              className={classes.stateOfTheArtImg}
-              src="/images/illustration-phones.svg"
-              alt="Illustration Phones"
-              width={552}
-              height={579}
-            />
-          </picture>
+          <Image
+            className={classes.stateOfTheArtImg}
+            src="/images/illustration-phones.svg"
+            alt="Illustration Phones"
+            width={552}
+            height={579}
+          />
         </Grid>
         <Grid
           item
