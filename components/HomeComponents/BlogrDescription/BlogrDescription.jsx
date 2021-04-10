@@ -16,8 +16,8 @@ const BlogrDescription = () => {
             <Image
               src="/images/illustration-laptop-mobile.svg"
               alt="background circles"
-              width={1200}
-              height={800}
+              width={700}
+              height={520}
             />
           ) : (
             <Image

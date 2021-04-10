@@ -27,8 +27,8 @@ const DesignedForTheFuture = () => {
               className={classes.designedImg}
               src="/images/illustration-editor-mobile.svg"
               alt="background circles"
-              width={1200}
-              height={900}
+              width={700}
+              height={540}
             />
           ) : (
             <Image
